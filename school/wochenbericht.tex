@@ -1,0 +1,126 @@
+\documentclass[a4paper, ngerman]{article}
+\usepackage[ngerman]{babel}
+\usepackage[ngerman]{isodate}
+%\usepackage[T1]{fontenc}
+%\usepackage{selinput} 
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{lastpage}
+\usepackage{tabularx}
+\usepackage[Q=yes]{examplep}
+\usepackage[toc,page]{appendix}
+\usepackage{a4wide}
+\usepackage{multirow}
+\usepackage{framed}
+
+%\usepackage[linguistics]{forest}
+
+\pgfplotsset{compat=newest}
+
+
+
+
+
+\author{Raphael Gruber}
+
+\title{Wochenbericht: <<title>>}
+
+\date{\origdate\today}
+
+
+
+\pagestyle{fancy}
+
+\fancyhf{}
+
+
+
+\rhead{\theauthor}
+
+\lhead{\thetitle}
+
+\lfoot{\origdate\today}
+\rfoot{Seite \thepage\ von \pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+\renewcommand{\appendixname}{Anhang}
+\renewcommand{\appendixpagename}{Anhänge}
+\renewcommand{\appendixtocname}{Anhänge}
+
+\newenvironment{qanda}{\setlength{\parindent}{0pt}}{\bigskip}
+\newcommand{\Qu}{\bigskip\bfseries Q: }
+\newcommand{\An}{\par\textbf{A:} \normalfont}
+
+\pretitle{\begin{center}\huge}
+
+\posttitle{\par\end{center}\vskip 0.5em}
+
+\preauthor{\begin{center}
+
+	\large \lineskip 0.5em%
+
+	\begin{tabular}[t]{c}}
+
+\postauthor{\end{tabular}\par\end{center}}
+
+\predate{\begin{center}\normalsize\bigskip Informationstechnische Projekte \\\smallskip SJ 2019/20 \textbar{} }
+
+\postdate{\par\end{center}}
+
+
+
+\begin{document}
+
+\begin{titlingpage}
+
+	\maketitle
+
+	\vfill
+
+	\vspace{-100pt}
+
+	\begin{center}
+
+		\begin{tabbing}
+
+			Übungsdatum \quad \= \kill
+
+			Klasse \> 4AHITN \\
+
+			Stunde am \> \origdate{<<datum>>} \\[20pt]
+
+			Bewertung \>
+
+		\end{tabbing}
+
+	\end{center}
+
+\end{titlingpage}
+
+
+
+\tableofcontents
+
+\newpage
+
+\section{Überschrift}
+
+\section{Fragen}
+
+\begin{qanda}
+	\Qu Was ist die Antwort?
+	\An 42
+\end{qanda}
+
+\end{document}

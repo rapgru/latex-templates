@@ -1,0 +1,117 @@
+\documentclass[a4paper, ngerman]{article}
+\usepackage[ngerman]{babel}
+\usepackage[ngerman]{isodate}
+%\usepackage[T1]{fontenc}
+%\usepackage{selinput} 
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{lastpage}
+\usepackage{tabularx}
+\usepackage[Q=yes]{examplep}
+\usepackage[toc,page]{appendix}
+\usepackage{a4wide}
+\usepackage{multirow}
+\usepackage{hyperref}
+
+%\usepackage[linguistics]{forest}
+
+
+
+\pgfplotsset{compat=newest}
+
+
+
+\author{Raphael Gruber}
+
+\title{Ausarbeitung: <<title>>}
+
+\date{\origdate\today}
+
+
+
+\pagestyle{fancy}
+
+\fancyhf{}
+
+
+
+\rhead{\theauthor}
+
+\lhead{\thetitle}
+
+\lfoot{\origdate\today}
+
+\rfoot{Seite \thepage\ von \pageref{LastPage}}
+
+
+
+\renewcommand{\headrulewidth}{1pt}
+
+\renewcommand{\footrulewidth}{1pt}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\renewcommand{\appendixname}{Anhang}
+\renewcommand{\appendixpagename}{Anhänge}
+\renewcommand{\appendixtocname}{Anhänge}
+
+
+\pretitle{\begin{center}\huge}
+
+\posttitle{\par\end{center}\vskip 0.5em}
+
+\preauthor{\begin{center}
+
+	\large \lineskip 0.5em%
+
+	\begin{tabular}[t]{c}}
+
+\postauthor{\end{tabular}\par\end{center}}
+
+\predate{\begin{center}\normalsize\bigskip <<fach>> \\\smallskip SJ 2019/20 \textbar{} }
+
+\postdate{\par\end{center}}
+
+\setlength{\droptitle}{120pt}
+
+
+
+\begin{document}
+
+\begin{titlingpage}
+
+	\maketitle
+	
+	\vfill
+
+	\begin{center}
+
+		IT-HTL Ybbs \\
+
+		Schulring 6 \\
+
+		Höhere Lehranstalt für Informationstechnologie
+
+	\end{center}
+
+\end{titlingpage}
+
+%\thispagestyle{empty}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Überschrift}
+
+\end{document}

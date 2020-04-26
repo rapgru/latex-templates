@@ -1,0 +1,77 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[ngerman]{babel}
+\usepackage[ngerman]{isodate}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{csquotes}
+\usepackage[scale=0.8]{geometry}
+\recomputelengths
+\nopagenumbers{}
+% place longest hint here
+\sethintscolumntowidth{Staatsbürgerschaft}
+%\newcommand*{\httpslink}[2][]{%
+%\ifthenelse{\equal{#1}{}}%
+%{\href{https://#2}{#2}}%
+%{\href{https://#2}{#1}}}
+\firstname{<<vorname>>}
+\familyname{<<nachname>>}
+\title{Lebenslauf}
+\address{<<address line 1>>}{<<address line 2>>}{<<country>>}
+\phone{<<phone>>}
+%\mobile{<<mobile>>}
+\email{<<email>>}
+%\homepage{<<homepage>>}
+%\extrainfo{}
+
+%
+%\photo[80pt][0.4pt]{Fotos/pic4}
+%\photo[80pt][0.4pt]{<<picture>>}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\numdate
+\makecvtitle
+
+\section{Persönliche Angaben}
+\cvitem{Geburtsdatum}{\printdate{1.1.2000}}
+\cvitem{Geburtsort}{<<Ort>>}
+% ...
+
+
+\section{Ausbildung}
+\cvitem{2000--2001}{<<schule>>}
+% ...
+
+\section{Berufserfahrung}
+\cventry{2002--2003}{<<Beruf>>}{<<Arbeitgeber>>}{<<Ort>>}{<<Titel>>}{<<Beschreibung>>}
+
+% \section{Sprachen}
+% \cvitemwithcomment{Katzensprache}{Muttersprache}{Flie{\ss}end in Ton, Mimick und K{\"o}rperhaltung.}
+% \cvitemwithcomment{Deutsch}{Grundlegende Kenntnisse}{Verst{\"a}ndnis ist dabei aber sehr stark von
+% meiner aktuellen Laune abh{\"a}ngig.}
+% \section{Computer skills}
+% \cvitem{Windows}{Kann ich im Schlaf.}
+% \cvitem{Linux}{Kann ich im Schlaf.}
+% \cvitem{Tastatur}{Guter Platz, um Menschen davon zu {\"u}berzeugen, dass ich wichtiger wie
+% ihre Arbeit bin.}
+% \cvitem{Apple}{Die Farbe pa{\ss}t nicht zu meinem Fell.}
+% \section{Interressen}
+% \cvitem{Kisten}{Jede Form und Gr{\"o}{\ss}e.}
+% \cvitem{Singv{\"o}gel}{Habe ich zum Fressen gern.}
+% \cvlistdoubleitem{M{\"a}use}{Ratten}
+% \cvlistdoubleitem{Schlafen}{Dosen{\"o}fner {\"a}rgern}
+%\section{Extra }
+%\cvlistitem{Schlau}
+%\cvlistitem{Schwarz}
+%\cvlistitem{Schnell}
+%\section{Mehr aus meinem Leben}
+%\cvlistitem{\httpslink[Auf Facebook]{de-de.facebook.com/poolkatze}}
+%\cvlistitem{\httpslink[Bei Google+]{plus.google.com/108014608678841227336/}}
+
+%\vfill\makecvfooter{Freiburg,~\today}
+
+\end{document}

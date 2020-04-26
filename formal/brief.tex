@@ -1,0 +1,85 @@
+\documentclass[
+  DIN,
+  fontsize=11pt,
+  paper=A4,
+  parskip=half,
+  fromalign=right,
+  fromrule=false,
+  enlargefirstpage=on,
+  fromphone=on,
+  fromemail=on,
+  version=last,
+  pagenumber=on,
+  backaddress=on,
+  foldmarks=on
+]{scrlttr2}
+
+
+\usepackage[ngerman]{babel}
+\usepackage[ngerman]{isodate}
+
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{csquotes}
+
+%\renewcommand{\familydefault}{\sfdefault}
+
+
+\LoadLetterOption{DIN}
+
+\setkomafont{fromname}{\sffamily \large}
+\setkomafont{fromaddress}{\sffamily}%% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\bfseries}
+\setkomafont{backaddress}{\mdseries}
+%\setkomafont{toaddress}{\rmfamily}
+%\setkomafont{toname}{\rmfamily}
+
+% do not indent the signature
+%\renewcommand*{\raggedsignature}{\raggedright} 
+
+% Adresszeilen und Anlagen mit \\ trennen
+
+\setkomavar{fromname}{<<name>>}
+\setkomavar{fromaddress}{<<address>>}
+\setkomavar{signature}{<<name>>}
+\setkomavar{fromphone}{<<phone>>}
+\setkomavar{fromemail}{<<email>>}
+\setkomavar{subject}{<<betreff>>}
+\setkomavar{place}{<<ort>>}
+
+\makeatletter
+\renewcommand*{\encl}[1]{\par%
+\ifdim\parskip=\z@%
+\vskip\baselineskip%
+\fi\noindent%
+\begingroup
+\parbox[t]{\textwidth}{%
+\ifkomavarempty*{enclseparator}{}{%
+\strut\usekomavar*{enclseparator}\usekomavar{enclseparator}\\%
+}%
+\ignorespaces #1\strut}%
+\parfillskip\fill\par
+\endgroup
+}
+\makeatother
+\renewcaptionname{ngerman}\enclname{\textbf{Anlage}}
+\setkomavar{enclseparator}{}
+\begin{document}
+
+\begin{letter}{<<empfaengerAdresse>>}
+
+\opening{Sehr geehrter <<name>>,}
+
+Text
+
+\closing{Mit freundlichen Grüßen}
+
+
+%===================================
+\encl{<<Anlagen>>}
+
+
+\end{letter}
+ 
+\end{document}
